@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MyFirstTest {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @Before
     public void start() {
@@ -15,7 +15,8 @@ public class MyFirstTest {
 
     @Test
     public void myFirstTest() {
-        driver.get("http://yandex.ru/");
+        //driver.get("http://yandex.ru/");
+        TestLogin.loginTest(driver);
     }
 
     @After

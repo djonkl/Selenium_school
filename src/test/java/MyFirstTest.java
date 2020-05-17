@@ -17,6 +17,7 @@ public class MyFirstTest {
     public void myFirstTest() {
         //driver.get("http://yandex.ru/");
         TestLogin.loginTest(driver);
+        TestAllAdminSections.startTestAllAdminSections(driver);
     }
 
     @After

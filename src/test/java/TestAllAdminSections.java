@@ -1,10 +1,9 @@
-import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class TestAllAdminSections {
 
-    public static void startTestAllAdminSections(@NotNull WebDriver driver) {
+    public static void startTestAllAdminSections( WebDriver driver) {
         //вычиляем кол-во главных меню в админке
         for (int i = 1; i <= driver.findElements(By.xpath("//li[@id='app-']")).size() ; i++) {
             driver.findElement(By.xpath("//li[@id='app-'][" + i + "]")).click();
@@ -19,5 +18,4 @@ public class TestAllAdminSections {
             }
         }
     }
-
 }

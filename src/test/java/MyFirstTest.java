@@ -21,7 +21,8 @@ public class MyFirstTest {
         //TestStikers.startTestStikers(driver);
         //TestSort.startTestSort(driver);
         //TestSort.startTestCountryZone(driver);
-        TestThisProduct.startTestThisProduct(driver);
+        //TestThisProduct.startTestThisProduct(driver);
+        TestCreateNewUser.startTestCreateNewUser(driver);
     }
 
     @After

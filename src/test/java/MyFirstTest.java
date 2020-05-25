@@ -16,11 +16,12 @@ public class MyFirstTest {
     @Test
     public void myFirstTest() {
         //driver.get("http://yandex.ru/");
-        TestLogin.loginTest(driver);
+        //TestLogin.loginTest(driver);
         //TestAllAdminSections.startTestAllAdminSections(driver);
         //TestStikers.startTestStikers(driver);
-        TestSort.startTestSort(driver);
-        TestSort.startTestCountryZone(driver);
+        //TestSort.startTestSort(driver);
+        //TestSort.startTestCountryZone(driver);
+        TestThisProduct.startTestThisProduct(driver);
     }
 
     @After

@@ -16,13 +16,13 @@ public class MyFirstTest {
     public void start() {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver,5);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @Test
     public void myFirstTest() {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.get("http://yandex.ru/");
-        //TestLogin.loginTest(driver);
+        TestLogin.loginTest(driver);
         //TestAllAdminSections.startTestAllAdminSections(driver);
         //TestStikers.startTestStikers(driver);
         //TestSort.startTestSort(driver);
@@ -30,7 +30,8 @@ public class MyFirstTest {
         //TestThisProduct.startTestThisProduct(driver);
         //TestCreateNewUser.startTestCreateNewUser(driver);
         //TestNewProduct.startTestNewProduct(driver);
-        TestCheckout.startTestCheckout(driver);
+        //TestCheckout.startTestCheckout(driver);
+        TestNewWindow.startTestNewWindow(driver);
     }
 
     @After

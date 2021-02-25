@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class MyFirstTest {
@@ -50,7 +51,7 @@ public class MyFirstTest {
     public void start() {
         driver = new EventFiringWebDriver( new ChromeDriver());
         driver.register(new MyListerner());
-        wait = new WebDriverWait(driver,5);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
